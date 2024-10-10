@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 :root{
     /*Colores*/
     --blanco-1: F8F8F8;
@@ -14,11 +16,79 @@
     /*Tamaño de texto*/
     --titulo: 4.3em;
     --subtitulo: 2.8em;
-    --texto: 1.8em;
+    --texto: 1.5em;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< Updated upstream
+=======
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Header*/
+header {
+    background-color: var(--azul-1);
+    height: 100px;
+    border-bottom: var(--azul-2) 3px solid;
+}
+
+header .logo {
+    padding: 35px 30px;
+    font-weight: bold;
+    font-size: var(--texto);
+    color: var(--blanco-1);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+header a {
+    padding: 0px 40px;
+    text-decoration: none;
+    color: var(--blanco-1);
+    font-weight: bold;
+}
+
+header a:hover {
+    color: var(--celeste-4);
+    border-bottom: 1px solid var(--celeste-4);
+    padding-bottom: 10px;
+}
+
+/*Footer*/
+footer {
+    background-color: var(--azul-1);
+}
+
+footer p {
+    padding: 12px;
+    color: var(--blanco-1);
+    font-size: var(--texto);
+}
+
+footer .container {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+>>>>>>> Stashed changes
 }
