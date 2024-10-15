@@ -68,14 +68,16 @@ header a:hover {
 /*Footer*/
 footer {
     background-color: var(--azul-1);
-    display: flex;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
     bottom: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
-    padding: 12px;
+    padding: 3px;
+    margin: 0;
     color: var(--blanco-1);
+    text-align: center;
+    
 }
