@@ -68,7 +68,7 @@ section.info .curso button:hover {
 }
 
 /* Estilos para pantallas medianas (tabletas) */
-@media (min-width: 768px) {
+@media (min-width: 481px) and (max-width:768px) {
     :root {
         --titulo: 3.5em;
         --subtitulo: 2.2em;
@@ -97,7 +97,7 @@ section.info .curso button:hover {
 }
 
 /* Estilos para pantallas grandes (escritorio) */
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
     :root {
         --titulo: 4.3em;
         --subtitulo: 2.8em;
@@ -122,6 +122,19 @@ section.info .curso button:hover {
 
     section.info .curso p {
         font-size: 1.2em;
+    }
+
+    div .contenido h2{
+        position: absolute;
+        top: 8vw;
+        left: 43vw;
+
+    }
+    
+    div .contenido{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5vw;
     }
 
 }
