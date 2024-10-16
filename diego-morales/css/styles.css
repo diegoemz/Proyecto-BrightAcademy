@@ -84,7 +84,7 @@ h2 {
     background-color: var(--blanco-1);
 }
 
-.btn-create-profile {
+.btn-create-profile, .btn-regresar {
     width: 100%;
     padding: 0.75rem;
     background-color: var(--azul-2);
@@ -96,6 +96,11 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-.btn-create-profile:hover {
+.btn-regresar{
+    text-decoration: none;
+    width: 100%;
+}
+
+.btn-create-profile:hover, .btn-regresar:hover {
     background-color: var(--azul-3);
 }
