@@ -70,7 +70,7 @@
     font-size: 1.2em;
 }
 .div-2 ul li{
-    font-size: 1em;
+    font-size: 0.91em;
 }
 .div-2 button{
     width: 110px;
@@ -87,4 +87,7 @@
     height: auto;
     width: 2px;
     background-color: var(--gris-1);
+}
+#decoration{
+    text-decoration: underline;
 }
