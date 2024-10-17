@@ -76,33 +76,10 @@ header {
     height: 10px;
 }
 /*Aside*/
-aside{
-    background-color: var(--gris-1);
-    padding: 87px 3% 100px 3%;
-    width: 25%;
-    height: 500px;
-}
-aside p{
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: var(--subtitulo);
-}
 aside div{
     background-color: var(--celeste-4);
     height: 300px;
 }
-aside ul li{
-    list-style: none;
-    display: block;
-    justify-content: space-around;
-}
-aside ul li button{
-    height: 50px;
-    width: 120px;
-    border: solid 1px;
-    border-radius: 15px;
-}
-
 
 /*Footer*/
 footer {
