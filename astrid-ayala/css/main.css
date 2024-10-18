@@ -1,0 +1,64 @@
+:root{
+    /*Colores*/
+    --negro: #000;
+    --gris-1: #d9d9d9;
+    --blanco-1: #F8F8F8;
+    --beige-1: #F2E3D5;
+    --azul-1: #012E40;
+    --azul-2: #024959;
+    --azul-3: #026773;
+    --azul-4: #3CA6A6;
+    --celeste-1: #234459;
+    --celeste-2: #3C7499;
+    --celeste-3: #5AAEE6;
+    --celeste-4: #94C1FF;
+
+    /*Tamaño de texto*/
+    --titulo: 4.3em;
+    --subtitulo: 1.2em;
+    --texto: 1em;
+    --botones: 1.5em;
+}
+.cursos{
+    padding: 90px 250px 90px 250px;
+}
+.cursos h1{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid var(--gris-1) 2px;
+}
+.cursos div{
+    padding-top: 20px;
+}
+.curso{
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: justify;
+    float: left;
+    width: 495px;
+    height: 275px;
+    clear: right;
+    border: solid var(--gris-1) 2px;
+    border-radius: 15px;
+    padding: 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    place-items: center;
+}
+.curso h2{
+    font-size: 1.1em;
+    padding-bottom: 8px;
+}
+.curso p{
+    font-size: 0.97em;
+    padding-bottom: 8px;
+}
+.curso h3{
+    font-size: 0.9em;
+}
+
+div.contenido{
+    margin-bottom: 80%;
+}
