@@ -23,6 +23,7 @@
     padding: 90px 250px 90px 250px;
 }
 .cursos h1{
+    padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: solid var(--gris-1) 2px;
