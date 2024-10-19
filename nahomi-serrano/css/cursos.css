@@ -24,12 +24,14 @@ body {
 }
 
 /* Sección de información de los cursos */
+
 .info {
     padding: 20px;
 }
-.info h2 {
+
+.info h1{
     padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 90px;
     padding-bottom: 10px;
     border-bottom: solid var(--gris-1) 2px;
 }
@@ -53,7 +55,7 @@ body {
 }
 
 .vista img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 15px;
     text-align: center;
 }
@@ -109,27 +111,25 @@ body {
 
 /* Estilos para pantallas medianas (tabletas) */
 @media (min-width: 481px) and (max-width:768px) {
-
-    .vista {
-        flex-direction: row;
-        width: 700px;
-        
+    .info h1{
+        padding-left: 20px;
+        padding-top: 90px;
+        padding-bottom: 10px;
+        border-bottom: solid var(--gris-1) 2px;
     }
 
-    .vista img {
-        max-width: 45%;
+    .div-1 h2 {
+        font-size: 1.1em;
+        padding-top: 5px;
     }
-
-    .div-1, .div-2 {
-        width: 50%;
+    
+    .div-1 h3 {
+        font-size: 1.1em;
+        padding-top: 5px;
     }
-
-    .div-2 {
-        text-align: justify;
-    }
-
-    .info {
-        padding: 40px 80px;
+    
+    .div-2 h2 {
+        font-size: 1.1em;
     }
 }
 
@@ -137,10 +137,15 @@ body {
 @media (min-width: 769px) {
     .vista {
         width: 900px;
+        flex-direction: row;
     }
 
     .info {
         padding: 90px 250px;
+    }
+
+    .info h1{
+        padding-top: 10px;
     }
 
     .vista img{
@@ -148,19 +153,21 @@ body {
     }
 
     .div-1 h2 {
-        font-size: 1.5em;
+        font-size: 1.1em;
+        padding-top: 5px;
     }
 
     .div-1 h3 {
-        font-size: 1.2em;
+        font-size: 0.9em;
+        padding-top: 5px;
     }
 
     .div-2 h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .div-2 ul li {
-        font-size: 1em;
+        font-size: 0.91em;
     }
 
     .div-2 button {
