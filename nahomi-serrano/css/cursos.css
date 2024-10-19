@@ -3,7 +3,7 @@
     --blanco-1: #F8F8F8;
     --beige-1: #F2E3D5;
     --azul-1: #012E40;
-    --azul-2: #024959;
+    --azul-2: #024959; 
     --azul-3: #026773;
     --azul-4: #3CA6A6;
     --celeste-1: #234459;
@@ -12,133 +12,158 @@
     --celeste-4: #94C1FF;
 
     /* Tamaño de texto en dispositivos móviles */
-    --titulo: 2.5em;
-    --subtitulo: 1.8em;
+    --titulo: 2em;
+    --subtitulo: 1.4em;
     --texto: 1em;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 /* Sección de información de los cursos */
-section.info {
-    padding: 10px;
-    background-color: var(--blanco-1);
-    max-width: 100%;
-    overflow-x: auto;
+.info {
+    padding: 20px;
+}
+.info h2 {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid var(--gris-1) 2px;
 }
 
-section.info h2 {
-    font-size: var(--subtitulo);
-    margin-bottom: 10px;
-    text-align: center;
+.cont {
+    padding-top: 20px;
+    display: grid;
+    place-items: center;
 }
 
-section.info .curso {
-    background-color: var(--celeste-3);
-    border: 2px solid black;
-    border-radius: 5px;
-    min-width: 150px;
-    margin: 10px;
-    padding: 10px;
+.vista {
+    border: solid var(--gris-1) 2px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    text-align: center;
-}
-
-section.info .curso h3 {
-    margin: 0;
-    font-size: 1.2em;
-}
-
-section.info .curso p {
-    font-size: 0.9em;
-    margin: 10px 0;
-}
-
-section.info .curso button {
-    background-color: var(--celeste-1);
-    color: white;
-    border: none;
     padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    margin-bottom: 10px;
     width: 100%;
 }
 
-section.info .curso button:hover {
-    background-color: var(--azul-1);
+.vista img {
+    max-width: 100%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.div-1, .div-2 {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.div-1 h2 {
+    font-size: 1.2em;
+    padding-top: 5px;
+}
+
+.div-1 h3 {
+    font-size: 1em;
+    padding-top: 5px;
+}
+
+.div-2 h2 {
+    font-size: 1.2em;
+}
+
+.div-2 ul li {
+    font-size: 0.91em;
+    list-style: none;
+}
+
+.div-2 button {
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    background: var(--gris-1);
+    border: none;
+}
+
+.div-2 button:hover {
+    background: var(--celeste-4);
+    font-weight: bold;
+}
+
+.linea {
+    height: auto;
+    width: 2px;
+    background-color: var(--gris-1);
+}
+
+#decoration {
+    text-decoration: underline;
 }
 
 /* Estilos para pantallas medianas (tabletas) */
 @media (min-width: 481px) and (max-width:768px) {
-    :root {
-        --titulo: 3.5em;
-        --subtitulo: 2.2em;
-        --texto: 1.2em;
+
+    .vista {
+        flex-direction: row;
+        width: 700px;
+        
     }
 
-    section.info {
-        padding: 20px;
+    .vista img {
+        max-width: 45%;
     }
 
-    section.info h2 {
-        font-size: var(--subtitulo);
+    .div-1, .div-2 {
+        width: 50%;
     }
 
-    section.info .curso {
-        min-width: 200px;
+    .div-2 {
+        text-align: justify;
     }
 
-    section.info .curso h3 {
-        font-size: 1.5em;
-    }
-
-    section.info .curso p {
-        font-size: 1.1em;
+    .info {
+        padding: 40px 80px;
     }
 }
 
 /* Estilos para pantallas grandes (escritorio) */
 @media (min-width: 769px) {
-    :root {
-        --titulo: 4.3em;
-        --subtitulo: 2.8em;
-        --texto: 1.8em;
+    .vista {
+        width: 900px;
     }
 
-    section.info {
-        padding: 30px;
-        display: flex;
-        justify-content: center; 
+    .info {
+        padding: 90px 250px;
     }
 
-    section.info .curso {
-        min-width: 250px;
-        max-width: 300px; 
-        margin: 15px; 
+    .vista img{
+        max-width: 45%;
     }
 
-    section.info .curso h3 {
-        font-size: 1.8em;
+    .div-1 h2 {
+        font-size: 1.5em;
     }
 
-    section.info .curso p {
+    .div-1 h3 {
         font-size: 1.2em;
     }
 
-    .contenido{
-        justify-content: center;
+    .div-2 h2 {
+        font-size: 1.5em;
     }
 
-    div .contenido h2{
-        position: absolute;
-        top: 8vw;
-        left: 43vw;
-
+    .div-2 ul li {
+        font-size: 1em;
     }
 
-    div .contenido{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 5vw;
+    .div-2 button {
+        width: 110px;
     }
-
 }
