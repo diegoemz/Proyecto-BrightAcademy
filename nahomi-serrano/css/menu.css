@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-:root{
+
+:root {
     /*Colores*/
     --negro: #000;
     --gris-1: #d9d9d9;
@@ -20,12 +21,14 @@
     --texto: 1em;
     --botones: 1.5em;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
+
 /*Header*/
 header {
     width: 100%;
@@ -35,31 +38,38 @@ header {
     position: fixed;
     z-index: 100;
 }
-.icono, .nombre{
+
+.icono,
+.nombre {
     padding-top: 13px;
 }
-.icono{
+
+.icono {
     width: 45px;
     height: auto;
-    margin-left:200px;
-} 
+    margin-left: 200px;
+}
+
 .nombre {
     font-weight: bold;
     color: var(--blanco-1);
     padding-left: 1%;
 }
+
 .container {
     display: flex;
     align-items: center;
     z-index: 100;
 }
-.nav{
+
+.nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 700px;
     padding-top: 10px;
 }
+
 .nav a {
     padding: 0px 15px;
     text-decoration: none;
@@ -67,18 +77,21 @@ header {
     border-left: solid var(--blanco-1) 1px;
     border-right: solid var(--blanco-1) 1px;
 }
+
 .nav a:hover {
     color: var(--celeste-4);
 }
-.decoration{
+
+.decoration {
     position: fixed;
     background-color: var(--gris-1);
     width: 100%;
     margin-top: 13px;
     height: 10px;
 }
+
 /*Aside*/
-aside div{
+aside div {
     background-color: var(--celeste-4);
     height: 300px;
 }
@@ -87,22 +100,25 @@ aside div{
 footer {
     position: fixed;
     bottom: 0px;
-    background-color: var(--azul-1); 
+    background-color: var(--azul-1);
     font-size: 0.8em;
     width: 100%;
     text-align: center;
 }
+
 footer p {
     padding: 12px;
     color: var(--blanco-1);
 }
+
 footer .cont {
     display: flex;
     height: 40px;
     justify-content: center;
     align-items: center;
-    
+
 }
-#bold{
+
+#bold {
     font-weight: bold;
 }
