@@ -44,7 +44,7 @@
                 <div class="div-1">
                     <img src="../img/pdf.png" alt="pdf">
                     <h3>Presentación 1</h3>
-                    <input type="checkbox" class="item-checkbox progreso" data-bar="progress-bar-1">
+                    <input type="checkbox" class="item-checkbox progreso">
                 </div>
             </article>
 
@@ -53,7 +53,7 @@
                 <div class="div-1">
                     <img src="../img/pdf.png" alt="pdf">
                     <h3>Presentación 2</h3>
-                    <input type="checkbox" class="item-checkbox progreso" data-bar="progress-bar-1">
+                    <input type="checkbox" class="item-checkbox progreso">
                 </div>
             </article>
 
@@ -62,7 +62,7 @@
                 <div class="div-1">
                     <img src="../img/pdf.png" alt="pdf">
                     <h3>Presentación 3</h3>
-                    <input type="checkbox" class="item-checkbox progreso" data-bar="progress-bar-1">
+                    <input type="checkbox" class="item-checkbox progreso">
                 </div>
             </article>
 
@@ -71,7 +71,7 @@
                 <div class="div-1">
                     <img src="../img/pdf.png" alt="pdf">
                     <h3>Presentación 4</h3>
-                    <input type="checkbox" class="item-checkbox progreso" data-bar="progress-bar-1">
+                    <input type="checkbox" class="item-checkbox progreso">
                 </div>
             </article>
 
@@ -80,7 +80,7 @@
                 <div class="div-1">
                     <img src="../img/pdf.png" alt="pdf">
                     <h3>Presentación 5</h3>
-                    <input type="checkbox" class="item-checkbox progreso" data-bar="progress-bar-1">
+                    <input type="checkbox" class="item-checkbox progreso">
                 </div>
             </article>
 
@@ -89,7 +89,7 @@
                 <div class="div-1">
                     <img src="../img/pdf.png" alt="pdf">
                     <h3>Presentación 6</h3>
-                    <input type="checkbox" class="item-checkbox progreso" data-bar="progress-bar-1">
+                    <input type="checkbox" class="item-checkbox progreso">
                 </div>
             </article>
 
@@ -98,7 +98,7 @@
                 <div class="div-1">
                     <img src="../img/pdf.png" alt="pdf">
                     <h3>Presentación 7</h3>
-                    <input type="checkbox" class="item-checkbox progreso" data-bar="progress-bar-1">
+                    <input type="checkbox" class="item-checkbox progreso">
                 </div>
             </article>
 
@@ -107,7 +107,7 @@
                 <div class="div-1">
                     <img src="../img/pdf.png" alt="pdf">
                     <h3>Presentación 8</h3>
-                    <input type="checkbox" class="item-checkbox progreso" data-bar="progress-bar-1">
+                    <input type="checkbox" class="item-checkbox progreso">
                 </div>
             </article>
 
@@ -116,7 +116,7 @@
                 <div class="div-1">
                     <img src="../img/pdf.png" alt="pdf">
                     <h3>Presentación 9</h3>
-                    <input type="checkbox" class="item-checkbox progreso" data-bar="progress-bar-1">
+                    <input type="checkbox" class="item-checkbox progreso">
                 </div>
             </article>
 
@@ -125,12 +125,33 @@
                 <div class="div-1">
                     <img src="../img/pdf.png" alt="pdf">
                     <h3>Presentación 10</h3>
-                    <input type="checkbox" class="item-checkbox progreso" data-bar="progress-bar-1">
+                    <input type="checkbox" class="item-checkbox progreso">
+
                 </div>
             </article>
-
         </div>
     </section>
+
+    <div class="progress-circle-container">
+        <div class="progress-circle" id="progress-circle">0%</div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.item-checkbox.progreso').forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgress);
+        });
+
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.item-checkbox.progreso');
+            const total = checkboxes.length;
+            const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
+            const percentage = (checked / total) * 100;
+
+            const progressCircle = document.getElementById('progress-circle');
+            progressCircle.style.setProperty('--progress', `${(percentage / 100) * 360}deg`);
+            progressCircle.textContent = `${Math.round(percentage)}%`;
+        }
+    </script>
 
     <footer>
         <p>&copy; BrightAcademy</p>
