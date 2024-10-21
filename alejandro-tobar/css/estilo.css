@@ -1,0 +1,74 @@
+/* Estilo del cuerpo */
+body.progreso {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Título */
+  h1.progreso {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Contenedor de los cursos */
+  .courses-container.progreso {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px;
+    width: 80%; /* Ajusta el ancho total */
+  }
+  
+  /* Curso individual */
+  .course.progreso {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Barra de progreso */
+  .progress-container.progreso {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+  
+  .progress-bar.progreso {
+    width: 0;
+    height: 20px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 12px;
+    transition: width 0.4s ease;
+  }
+  
+  /* Tablas */
+  table.progreso {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th.progreso, td.progreso {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .item-checkbox.progreso {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  
