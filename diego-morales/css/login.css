@@ -25,54 +25,51 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
-body {
-    background-color: var(--blanco-1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.logo-container {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.logo-container p {
-    font-size: var(--titulo);
-    color: var(--azul-4);
-    font-weight: bold;
-}
-
-.login-container {
-    background-color: var(--beige-1);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/*Header*/
+header {
     width: 100%;
-    max-width: 400px;
+    height: 10%;
+    background-color: var(--azul-1);
+    border-bottom: var(--azul-2) 3px solid;
+    position: fixed;
+    top: 0;
+}
+
+header p{
     text-align: center;
-    color: var(--azul-1);
+    padding: 30px 0px;
+    color: var(--blanco-1);
+    font-size: var(--texto);
+}
+
+/*Form*/
+.login-container {
+    margin: 250px 20px;
+    border-radius: 8px;
+    border: solid var(--azul-3) 2px;
+    width: 90%;
+    max-width: 400px;
+    color: black;
+    text-align: center;
+    padding: 0 20px;
 }
 
 h2 {
     margin-bottom: 1rem;
-    font-size: var(--subtitulo);
-    color: var(--azul-2);
+    font-size: 2.2rem;
+    color: black;
 }
 
 .btn-toggle {
     margin-bottom: 1rem;
-    background-color: var(--celeste-2);
+    background-color: var(--azul-2);
     color: white;
     padding: 0.5rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: var(--texto);
+    font-size: 1.2em;
 }
 
 .btn-toggle:hover {
@@ -88,12 +85,11 @@ h2 {
     display: block;
     margin-bottom: 0.5rem;
     color: var(--azul-3);
-    font-size: var(--texto);
+    font-size: 1.2em;
 }
 
 .input-group input {
-    width: 100%;
-    padding: 0.75rem;
+    width: 90%;
     border: 1px solid var(--celeste-1);
     border-radius: 4px;
     font-size: var(--texto);
@@ -101,13 +97,13 @@ h2 {
 }
 
 .btn-login {
-    width: 100%;
+    width: 90%;
     padding: 0.75rem;
     background-color: var(--azul-2);
     color: var(--blanco-1);
     border: none;
     border-radius: 4px;
-    font-size: var(--texto);
+    font-size: 1.3em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -124,15 +120,54 @@ h2 {
 
 .create-account p {
     margin-bottom: 0.5rem;
+    font-size: 0.85em;
 }
 
 .btn-create {
     text-decoration: none;
     color: var(--celeste-3);
     font-weight: bold;
-    font-size: var(--texto);
+    font-size: 1em;
 }
 
 .btn-create:hover {
     text-decoration: underline;
+}
+
+/*Footer*/
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--azul-1);
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    padding: 12px;
+    color: var(--blanco-1);
+}
+
+footer .cont {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 481px) and (max-width:768px){
+    .login-container{
+        margin: 250px 50px;
+    }
+}
+
+@media (min-width: 769px){
+    header p{
+        padding: 20px 0px;
+    }
+    
+    .login-container{
+        margin: 140px 560px;
+    }
 }
