@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir material de apoyo</title>
+    <link rel="stylesheet" href="../diego-cabezas/css/upload-css.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <img src="profile.png" alt="Foto de perfil">
+                <span>Prof. Patricia Rodríguez</span>
+            </div>
+            <nav class="weeks">
+                <button class="week-btn active">Semana 1</button>
+                <button class="week-btn">Semana 2</button>
+                <button class="week-btn">Semana 3</button>
+                <button class="week-btn">Semana 4</button>
+            </nav>
+        </header>
+
+        <aside>
+            <h3>Agregar</h3>
+            <div class="options">
+                <label><input type="radio" name="action" value="agregar" checked> Agregar</label>
+                <label><input type="radio" name="action" value="eliminar"> Eliminar</label>
+                <label><input type="radio" name="action" value="editar"> Editar</label>
+            </div>
+            <div class="file-types">
+                <h4>Tipos de archivos aceptados:</h4>
+                <p>Word, Excel, PDF, mp4, mp3, png, jpg, zip, python, html</p>
+            </div>
+        </aside>
+
+        <main>
+            <h2>Subir material de apoyo</h2>
+            <div class="upload-section">
+                <input type="file" name="" id="">
+                <div class="upload-box">
+                    <img src="upload-icon.png" alt="Icono de subir">
+                    <p>Arrastra aquí tu archivo</p>
+                </div>
+                <label for="file-name">Nombre del archivo:</label>
+                <input type="text" id="file-name" placeholder="Ingrese el nombre del archivo">
+                <div class="buttons">
+                    <button class="upload-btn">Subir</button>
+                    <button class="cancel-btn">Cancelar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

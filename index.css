@@ -1,9 +1,9 @@
-:root{
-    /*Colores*/
+:root {
+    /* Colores */
     --blanco-1: #F8F8F8;
     --beige-1: #F2E3D5;
     --azul-1: #012E40;
-    --azul-2: #024959;
+    --azul-2: #024959; 
     --azul-3: #026773;
     --azul-4: #3CA6A6;
     --celeste-1: #234459;
@@ -11,22 +11,20 @@
     --celeste-3: #5AAEE6;
     --celeste-4: #94C1FF;
 
-    /*Tamaño de texto*/
-    --titulo: 4.3em;
-    --subtitulo: 2.8em;
-    --texto: 1.8em;
+    /* Tamaño de texto en dispositivos móviles */
+    --titulo: 2em;
+    --subtitulo: 1.4em;
+    --texto: 1em;
 }
 
-*{
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .container{
-    max-width: 1450px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 /*Header*/
@@ -44,7 +42,7 @@ header .logo {
     padding-left: 50px;
 }
 
-header .container {
+header .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,7 +67,12 @@ header a:hover {
 
 /*Footer*/
 footer {
-    background-color: var(--azul-1);   
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--azul-1);
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
 }
 
 footer p {
@@ -77,9 +80,10 @@ footer p {
     color: var(--blanco-1);
 }
 
-footer .container {
+footer .cont {
     display: flex;
-    height: 100px;
+    height: 40px;
     justify-content: center;
     align-items: center;
+
 }

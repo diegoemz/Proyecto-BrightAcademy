@@ -1,0 +1,147 @@
+:root {
+    /* Colores */
+    --blanco-1: #F8F8F8;
+    --beige-1: #F2E3D5;
+    --azul-1: #012E40;
+    --azul-2: #024959; 
+    --azul-3: #026773;
+    --azul-4: #3CA6A6;
+    --celeste-1: #234459;
+    --celeste-2: #3C7499;
+    --celeste-3: #5AAEE6;
+    --celeste-4: #94C1FF;
+
+    /* Tamaño de texto en dispositivos móviles */
+    --titulo: 2em;
+    --subtitulo: 1.4em;
+    --texto: 1em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*INFORMACION*/
+.navegador2{
+    padding: 20px;
+}
+
+.navegador2 h1{
+    padding-left: 20px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+}
+
+.nav2{
+    padding-top: 10px;
+    border-bottom: solid var(--gris-1) 2px;
+}
+
+.nav2 a{
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.nav2 a:hover{
+    background-color: var(--celeste-3);
+}
+
+.info {
+    padding: 0px 25px 50px 25px;
+}
+
+.vista {
+    border: solid var(--gris-1) 2px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+.cont h2{
+    padding-top: 10px;
+}
+
+.cont h3{
+    font-size: 1em;
+    padding-top: 3px;
+}
+
+.div-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-1{
+    font-size: 0.85em;
+}
+
+.tabla, th{
+    border: solid var(--gris-1) 2px;
+}
+
+.tabla th {
+    font-size: 0.85em;
+    text-align: center;
+}
+
+.tabla img{
+    max-width: 15%;
+    border-radius: 15px;
+    padding-top: 10px;
+}
+
+@media (min-width: 481px) and (max-width:768px){
+    .cont h3{
+        font-size: 1.1em;
+        padding-top: 3px;
+    }
+    
+    .tabla th {
+        font-size: 0.85em;
+        text-align: left;
+        padding-left: 5px;
+    }
+    
+    .tabla img{
+        max-width: 7%;
+        border-radius: 15px;
+        padding-top: 10px;
+    }
+    
+}
+
+@media (min-width: 769px){
+    .navegador2{
+        padding: 20px 250px 0px 250px;
+    }
+
+    .navegador2 h1{
+        padding-left: 5px;
+    }
+
+    .info {
+        padding: 0px 250px 60px 250px;
+    }
+
+    .tabla{
+        margin: 20px 95px;
+        width: 85%;
+    }
+
+    .tabla th {
+        font-size: 0.85em;
+        text-align: left;
+        padding-left: 5px;
+    }
+    
+    .tabla img{
+        max-width: 6%;
+        border-radius: 15px;
+        padding-top: 10px;
+    }
+}

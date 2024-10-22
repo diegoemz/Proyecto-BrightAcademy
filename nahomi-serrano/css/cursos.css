@@ -1,0 +1,181 @@
+:root {
+    /* Colores */
+    --blanco-1: #F8F8F8;
+    --beige-1: #F2E3D5;
+    --azul-1: #012E40;
+    --azul-2: #024959; 
+    --azul-3: #026773;
+    --azul-4: #3CA6A6;
+    --celeste-1: #234459;
+    --celeste-2: #3C7499;
+    --celeste-3: #5AAEE6;
+    --celeste-4: #94C1FF;
+
+    /* Tamaño de texto en dispositivos móviles */
+    --titulo: 2em;
+    --subtitulo: 1.4em;
+    --texto: 1em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sección de información de los cursos */
+
+.info {
+    padding: 20px;
+}
+
+.info h1{
+    padding-left: 20px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    border-bottom: solid var(--gris-1) 2px;
+}
+
+.cont {
+    padding-top: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.vista {
+    border: solid var(--gris-1) 2px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.vista img {
+    max-width: 80%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.div-1, .div-2 {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.div-1 h2 {
+    font-size: 1.2em;
+    padding-top: 5px;
+}
+
+.div-1 h3 {
+    font-size: 1em;
+    padding-top: 5px;
+}
+
+.div-2 h2 {
+    font-size: 1.2em;
+}
+
+.div-2 ul li {
+    font-size: 0.91em;
+    list-style: none;
+}
+
+.div-2 button {
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    background: var(--gris-1);
+    border: none;
+}
+
+.div-2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.div-2 button:hover {
+    background: var(--celeste-4);
+    font-weight: bold;
+}
+
+.linea {
+    height: auto;
+    width: 2px;
+    background-color: var(--gris-1);
+}
+
+#decoration {
+    text-decoration: underline;
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 481px) and (max-width:768px) {
+    .info h1{
+        padding-left: 20px;
+        padding-top: 90px;
+        padding-bottom: 10px;
+        border-bottom: solid var(--gris-1) 2px;
+    }
+
+    .div-1 h2 {
+        font-size: 1.1em;
+        padding-top: 5px;
+    }
+    
+    .div-1 h3 {
+        font-size: 1.1em;
+        padding-top: 5px;
+    }
+    
+    .div-2 h2 {
+        font-size: 1.1em;
+    }
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 769px) {
+    .vista {
+        width: 900px;
+        flex-direction: row;
+    }
+
+    .info {
+        padding: 90px 250px;
+    }
+
+    .info h1{
+        padding-top: 10px;
+    }
+
+    .vista img{
+        max-width: 45%;
+    }
+
+    .div-1 h2 {
+        font-size: 1.1em;
+        padding-top: 5px;
+    }
+
+    .div-1 h3 {
+        font-size: 0.9em;
+        padding-top: 5px;
+    }
+
+    .div-2 h2 {
+        font-size: 1.2em;
+    }
+
+    .div-2 ul li {
+        font-size: 0.91em;
+    }
+
+    .div-2 button {
+        width: 110px;
+    }
+}
