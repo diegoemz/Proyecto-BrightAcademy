@@ -26,6 +26,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
+.logOut{
+    margin-left: 10px;
+    background-color: var(--azul-1);
+}
 /*Header*/
 header {
     width: 100%;

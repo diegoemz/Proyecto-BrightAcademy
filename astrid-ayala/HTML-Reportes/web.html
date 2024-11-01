@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightAcademy</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/cursos.css">
+    <link rel="stylesheet" href="../css/reportes.css">
+    <link rel="stylesheet" href="../css/tabla.css">
+    <link rel="icon" href="../../img/educacion.png" type="image/x-icon">
+    <script src="../js/web.js"></script>
+</head>
+<body onload="graficoProgreso(); graficoCalificaciones(); viewEstudiantes();">
+    <header>
+        <div class="container">
+            <img class="icono" src="../../img/perfil.png" alt="Perfil usuario">
+            <p class="nombre">Alexis Ayala  |  Admin</p>
+            <nav class="nav">
+                <a href="../main-area.html">Área Principal</a>
+                <a href="../cursos-area.html">Cursos</a>
+            </nav>
+        </div>
+        <div class="decoration"></div>
+    </header>
+    <section class="vista-cursos">
+        <h1>Reporte de rendimiento</h1>
+        <div id="graficos">
+            <article>
+                <div class="container-graficos">
+                    <div id="grafico-progreso">
+                        <span id="valor-progreso">0%</span>
+                    </div>
+                </div>
+                <h2>Promedio de progreso</h2>
+            </article>
+            <article>
+                <div class="container-graficos">
+                    <div id="grafico-calificacion">
+                        <span id="valor-calificacion">0</span>
+                    </div>
+                </div>
+                <h2>Promedio de calificaciones</h2>
+            </article>
+        </div>
+    </section>
+    <section id="tabla" class="vista-cursos">
+        <h1>Listado general</h1>
+        <div id="containerEstudiantes"></div>
+    </section>
+</body>
+<footer>
+    <div class="cont">
+        <p>&copy; BrightAcademy</p>
+    </div>
+</footer>
+</html>

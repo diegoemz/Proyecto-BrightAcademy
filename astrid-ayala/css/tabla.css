@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+/*encabezados de la tabla*/
+.table th {
+    background-color: var(--azul-1);
+    color: white;
+    padding: 12px;
+}
+/*celdas de la tabla*/
+.table td {
+    padding: 12px;
+    border: 1px solid #ddd; 
+}
+/*filas alternas*/
+.table tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+/*hover en las filas*/
+.table tr:hover {
+    background-color: #f1f1f1; 
+}
+/*Estilos para el cuerpo de la tabla*/
+.table tbody tr {
+    transition: background-color 0.3s;
+}
+@media (max-width: 600px) {
+    .table {
+        font-size: 14px;
+    }
+    .table th, .table td {
+        padding: 8px;
+    }
+}

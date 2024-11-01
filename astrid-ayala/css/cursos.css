@@ -86,6 +86,9 @@
     background: var(--celeste-4);
     font-weight: bold;
 }
+.div-2 button a{
+    color: #000;
+}
 .linea{
     height: auto;
     width: 2px;
